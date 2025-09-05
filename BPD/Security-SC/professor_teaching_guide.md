@@ -84,12 +84,6 @@ function withdraw(uint256 amount) public {
 1. "Miren el orden: primero enviamos dinero, después actualizamos"
 2. "¿Qué pasa si el receptor llama de vuelta a withdraw()?"
 3. "Su balance sigue siendo el mismo → puede retirar otra vez"
-
-**🎭 Dramatización:**
-- Tú eres el contrato
-- Un estudiante es el atacante
-- Actúen el ataque paso a paso
-
 ---
 
 ### ⏰ **Parte 3: Implementación Guiada (35 min)**
