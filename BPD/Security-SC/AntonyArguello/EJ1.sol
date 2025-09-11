@@ -27,3 +27,4 @@ contract SimpleOwnership {
         return owner;
     }
 }
+//
