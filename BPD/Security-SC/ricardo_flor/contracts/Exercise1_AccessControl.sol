@@ -8,11 +8,12 @@ contract SimpleOwnership {
         owner = msg.sender;
     }
 
+    //Solo el owner debe poder cambiar el ownership
     modifier verifyOwner() {
         require(msg.sender==owner, "No es el owner, no puede cambiar el contrato");
         _;
     }  
-    // 🚨 PROBLEMA: ¿Quién puede cambiar el owner actualmente?
+
     function changeOwner(address newOwner) public verifyOwner{
         owner = newOwner;
     }
