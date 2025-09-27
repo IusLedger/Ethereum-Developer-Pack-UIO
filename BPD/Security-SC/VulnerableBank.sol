@@ -41,10 +41,11 @@ contract VulnerableBank {
         payable(owner).transfer(balance); // Puede fallar y bloquear el contrato
     }
     
+
     // ❌ PROBLEMA 5: Sin validación + visibilidad incorrecta
     function adminTransfer(address from, address to, uint256 amount) public {
         // Sin verificar si es admin
-        // Sin validar direcciones
+        // Sin validar direcciones 
         balances[from] -= amount; // Puede causar underflow
         balances[to] += amount;   // Puede causar overflow
     }
