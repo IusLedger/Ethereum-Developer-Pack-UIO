@@ -1,0 +1,8 @@
+[submodule "Foundry-InitialProject/hello_foundry/lib/forge-std"]
+	path = Foundry-InitialProject/hello_foundry/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "Foundry-InitialProject/hello_foundry/lib/solmate"]
+	path = Foundry-InitialProject/hello_foundry/lib/solmate
+	url = https://github.com/transmissions11/solmate
+[submodule "lib/solmate"]
+	path = lib/solmate
